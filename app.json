@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "daily-journey",
+    "slug": "daily-journey",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
