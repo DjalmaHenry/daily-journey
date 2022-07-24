@@ -7,12 +7,12 @@ export function Input({ ...rest }: IInputProps) {
       h={14}
       size="md"
       borderWidth={1}
+      borderColor="gray.300"
       fontSize="md"
       fontFamily="body"
       color="white"
       placeholderTextColor="gray.300"
       _focus={{
-        borderWidth: 1,
         borderColor: "green.500",
         bg: "gray.700",
       }}
