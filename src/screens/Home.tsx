@@ -6,15 +6,21 @@ import {
   useTheme,
   Text,
   Heading,
+  FlatList,
+  Center,
 } from "native-base";
 import { SignOut } from "phosphor-react-native";
 import Logo from "../assets/logo_secondary.svg";
-import { Filter } from "../components/filter";
+import { Filter } from "../components/Filter";
+import { Button } from "../components/Button";
+import { Task, TaskProps } from "../components/Task";
+import { Confetti, SmileySad } from "phosphor-react-native";
 
 export function Home() {
   const [statusSelected, setStatusSelected] = useState<
     "todo" | "doing" | "done"
   >("todo");
+  const [tasks, setTasks] = useState<TaskProps[]>([]);
   const { colors } = useTheme();
 
   return (
@@ -63,6 +69,33 @@ export function Home() {
             isActive={statusSelected === "done"}
           />
         </HStack>
+
+        <FlatList
+          data={tasks}
+          keyExtractor={(item) => item.id}
+          renderItem={({ item }) => <Task data={item} />}
+          showsVerticalScrollIndicator={false}
+          contentContainerStyle={{ paddingBottom: 100 }}
+          ListEmptyComponent={() => (
+            <Center>
+              {statusSelected === "done" ? (
+                <SmileySad color={colors.gray[300]} size={40} />
+              ) : (
+                <Confetti color={colors.gray[300]} size={40} />
+              )}
+              <Text color="gray.300" fontSize="xl" mt={6} textAlign="center">
+                Nenhuma tarefa{" "}
+                {statusSelected === "todo"
+                  ? "a fazer"
+                  : statusSelected === "doing"
+                  ? "em andamento"
+                  : "finalizada"}
+              </Text>
+            </Center>
+          )}
+        />
+
+        <Button title="Nova Tarefa" mb={5} mt={5} />
       </VStack>
     </VStack>
   );
