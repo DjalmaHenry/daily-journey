@@ -64,7 +64,7 @@ export function Home() {
           />
           <Filter
             type="done"
-            title="finalizados"
+            title="finalizadas"
             onPress={() => setStatusSelected("done")}
             isActive={statusSelected === "done"}
           />
