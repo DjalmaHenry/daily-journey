@@ -64,7 +64,7 @@ export function Home() {
           alignItems="center"
         >
           <Heading color="gray.100">Tarefas</Heading>
-          <Text color="gray.200">3</Text>
+          <Text color="gray.200">{tasks.length}</Text>
         </HStack>
 
         <HStack space={3} mb={8}>
