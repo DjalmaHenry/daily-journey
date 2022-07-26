@@ -15,13 +15,31 @@ import { Filter } from "../components/Filter";
 import { Button } from "../components/Button";
 import { Task, TaskProps } from "../components/Task";
 import { Confetti, SmileySad } from "phosphor-react-native";
+import { useNavigation } from "@react-navigation/native";
 
 export function Home() {
   const [statusSelected, setStatusSelected] = useState<
     "todo" | "doing" | "done"
   >("todo");
-  const [tasks, setTasks] = useState<TaskProps[]>([]);
+
+  const [tasks, setTasks] = useState<TaskProps[]>([
+    {
+      id: "1",
+      title: "Lavar o carro",
+      when: "25/07/2022 às 10:00",
+      status: "todo",
+    },
+  ]);
   const { colors } = useTheme();
+  const navigation = useNavigation();
+
+  function handleNewTask() {
+    navigation.navigate("new");
+  }
+
+  function handleOpenDetails(taskId: string) {
+    navigation.navigate("details", { taskId });
+  }
 
   return (
     <VStack flex={1} pb={6} bg="gray.700">
@@ -73,7 +91,9 @@ export function Home() {
         <FlatList
           data={tasks}
           keyExtractor={(item) => item.id}
-          renderItem={({ item }) => <Task data={item} />}
+          renderItem={({ item }) => (
+            <Task data={item} onPress={() => handleOpenDetails(item.id)} />
+          )}
           showsVerticalScrollIndicator={false}
           contentContainerStyle={{ paddingBottom: 100 }}
           ListEmptyComponent={() => (
@@ -95,7 +115,7 @@ export function Home() {
           )}
         />
 
-        <Button title="Nova Tarefa" mb={5} mt={5} />
+        <Button title="Nova Tarefa" onPress={handleNewTask} mb={5} mt={5} />
       </VStack>
     </VStack>
   );

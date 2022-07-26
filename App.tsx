@@ -1,5 +1,5 @@
 import { NativeBaseProvider, StatusBar } from "native-base";
-import { Home } from "./src/screens/Home";
+import { Routes } from "./src/routes";
 import { Loading } from "./src/components/Loading";
 import { THEME } from "./src/styles/theme";
 import {
@@ -18,7 +18,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent
       />
-      {fontsLoaded ? <Home /> : <Loading />}
+      {fontsLoaded ? <Routes /> : <Loading />}
     </NativeBaseProvider>
   );
 }
