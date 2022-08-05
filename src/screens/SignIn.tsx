@@ -7,7 +7,7 @@ import { Input } from "../components/Input";
 import { Envelope, Key } from "phosphor-react-native";
 import { Button } from "../components/Button";
 
-export function SignIn() {
+export default function SignIn() {
   const [isLoading, setIsLoading] = useState(false);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
