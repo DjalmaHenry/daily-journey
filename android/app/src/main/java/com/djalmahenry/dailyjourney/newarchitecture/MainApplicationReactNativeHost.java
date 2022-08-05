@@ -1,4 +1,4 @@
-package com.dailyjourney.newarchitecture;
+package com.djalmahenry.dailyjourney.newarchitecture;
 
 import android.app.Application;
 import androidx.annotation.NonNull;
@@ -19,9 +19,9 @@ import com.facebook.react.fabric.CoreComponentsRegistry;
 import com.facebook.react.fabric.EmptyReactNativeConfig;
 import com.facebook.react.fabric.FabricJSIModuleProvider;
 import com.facebook.react.uimanager.ViewManagerRegistry;
-import com.dailyjourney.BuildConfig;
-import com.dailyjourney.newarchitecture.components.MainComponentsRegistry;
-import com.dailyjourney.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
+import com.djalmahenry.dailyjourney.BuildConfig;
+import com.djalmahenry.dailyjourney.newarchitecture.components.MainComponentsRegistry;
+import com.djalmahenry.dailyjourney.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
 import java.util.ArrayList;
 import java.util.List;
 

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>27175827969-f5tir7eilah3a2m551firtprckis200s.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.27175827969-f5tir7eilah3a2m551firtprckis200s</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBFWHTI9pvzL79Vz7A6QRS9G9LaqptTfGo</string>
+	<key>GCM_SENDER_ID</key>
+	<string>27175827969</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.djalmahenry.dailyjourney</string>
+	<key>PROJECT_ID</key>
+	<string>daily-journey-app</string>
+	<key>STORAGE_BUCKET</key>
+	<string>daily-journey-app.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:27175827969:ios:3b8d1e015cb5eb5c161e00</string>
+</dict>
+</plist>

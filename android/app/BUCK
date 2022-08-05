@@ -35,12 +35,12 @@ android_library(
 
 android_build_config(
     name = "build_config",
-    package = "com.dailyjourney",
+    package = "com.djalmahenry.dailyjourney",
 )
 
 android_resource(
     name = "res",
-    package = "com.dailyjourney",
+    package = "com.djalmahenry.dailyjourney",
     res = "src/main/res",
 )
 

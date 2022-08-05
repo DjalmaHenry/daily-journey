@@ -1,4 +1,4 @@
-package com.dailyjourney;
+package com.djalmahenry.dailyjourney;
 
 import android.os.Build;
 import android.os.Bundle;

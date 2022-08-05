@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "27175827969",
+    "project_id": "daily-journey-app",
+    "storage_bucket": "daily-journey-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:27175827969:android:5dcf17f9e3c20c05161e00",
+        "android_client_info": {
+          "package_name": "com.djalmahenry.dailyjourney"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "27175827969-gm18cc59qvonc58ugcc5a1rml6prd7t7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgeXAAOjt0fmufuw4ODc6KUYSEwb7R9-A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "27175827969-gm18cc59qvonc58ugcc5a1rml6prd7t7.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "27175827969-f5tir7eilah3a2m551firtprckis200s.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.djalmahenry.dailyjourney"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

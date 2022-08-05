@@ -1,4 +1,4 @@
-package com.dailyjourney.newarchitecture.components;
+package com.djalmahenry.dailyjourney.newarchitecture.components;
 
 import com.facebook.jni.HybridData;
 import com.facebook.proguard.annotations.DoNotStrip;
