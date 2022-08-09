@@ -1,6 +1,6 @@
 import { NativeBaseProvider, StatusBar } from "native-base";
 import { Routes } from "./src/routes";
-import { Loading } from "./src/components/Loading";
+import Loading from "./src/components/Loading";
 import { THEME } from "./src/styles/theme";
 import {
   useFonts,

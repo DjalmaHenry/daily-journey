@@ -24,7 +24,13 @@ export default function SignIn() {
       .signInWithEmailAndPassword(email, password)
       .catch((error) => {
         setIsLoading(false);
-        Alert.alert("Entrar", error.message);
+        if(error.code === 'auth/invalid-email') {
+          return Alert.alert("Entrar", "E-mail inválido.");
+        } else if(error.code === 'auth/user-not-found' || error.code === 'auth/wrong-password') {
+          return Alert.alert("Entrar", "E-mail ou senha inválida.");
+        } else {
+          return Alert.alert("Entrar", "Não foi possível acessar.");
+        }
       });
   }
 
