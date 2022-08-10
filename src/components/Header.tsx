@@ -38,7 +38,7 @@ export function Header({ title, ...rest }: Props) {
       <Heading
         color="gray.100"
         textAlign="center"
-        fontSize="lg"
+        size="lg"
         flex={1}
         ml={-6}
       >
